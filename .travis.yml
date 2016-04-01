@@ -14,4 +14,4 @@ install:
   - pip install -e . --use-mirrors
 
 script:
-  - python setup.py test
+  - python runtests.py
