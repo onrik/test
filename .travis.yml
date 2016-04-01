@@ -10,7 +10,8 @@ env:
   - DJANGO=1.9
 
 install:
-  - pip install Django==$DJANGO --use-mirrors
-  - pip install -e . --use-mirrors
+  - pip install -q Django==$DJANGO --use-mirrors
+  - pip install . --use-mirrors
 
-script: python setup.py test
+script:
+  - python setup.py test
