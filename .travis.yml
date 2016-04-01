@@ -11,7 +11,7 @@ env:
 
 install:
   - pip install -q Django==$DJANGO --use-mirrors
-  - pip install . --use-mirrors
+  - pip install -e . --use-mirrors
 
 script:
   - python setup.py test
