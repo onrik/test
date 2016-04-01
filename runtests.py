@@ -33,3 +33,6 @@ def runtests():
     test_runner = TestRunner(verbosity=1, interactive=True)
     
     sys.exit(test_runner.run_tests([]))
+    
+if __name__ == '__main__':
+    runtests()
