@@ -10,8 +10,7 @@ env:
   - DJANGO=1.9
 
 install:
-  - pip install -q Django==$DJANGO --use-mirrors
-  - pip install -e . --use-mirrors
+  - pip install -q Django==$DJANGO
 
 script:
   - python runtests.py
