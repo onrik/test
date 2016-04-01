@@ -32,4 +32,4 @@ def runtests():
     TestRunner = get_runner(settings)
     test_runner = TestRunner(verbosity=1, interactive=True)
     
-    sys.exit(test_runner.run_tests(['webshell))
+    sys.exit(test_runner.run_tests([]))
