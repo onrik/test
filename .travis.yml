@@ -1,16 +1,8 @@
-language: python
+language: go
 
-python:
-  - "2.7"
-  - "3.4"
-
-env:
-  - DJANGO=1.7
-  - DJANGO=1.8
-  - DJANGO=1.9
+go:
+  - 1.5
+  - tip
 
 install:
-  - pip install -q Django==$DJANGO
-
-script:
-  - python runtests.py
+  - go get github.com/stretchr/testify/assert
