@@ -6,3 +6,6 @@ go:
 
 install:
   - go get github.com/stretchr/testify/assert
+
+after_success:
+  - coveralls
