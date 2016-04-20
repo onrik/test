@@ -6,6 +6,11 @@ go:
 
 install:
   - go get github.com/stretchr/testify/assert
+  - go get golang.org/x/tools/cmd/cover
+  - go get github.com/mattn/goveralls
+  
+script:
+  - go test -v -covermode=count -coverprofile=coverage.out
 
 after_success:
-  - coveralls
+  - goveralls -coverprofile=coverage.out -service=travis-ci -repotoken gbxPjzB4QimCs1Vt1Z0SXIHV5F0Ba4MDY
