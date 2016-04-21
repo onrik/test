@@ -13,4 +13,4 @@ script:
   - go test -v -covermode=count -coverprofile=coverage.out
 
 after_success:
-  - goveralls -coverprofile=coverage.out -service=travis-ci -repotoken gbxPjzB4QimCs1Vt1Z0SXIHV5F0Ba4MDY
+  - ./bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken gbxPjzB4QimCs1Vt1Z0SXIHV5F0Ba4MDY
