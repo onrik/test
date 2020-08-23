@@ -1,2 +1,2 @@
 # test
-[![test status](https://github.com/onrik/test/workflows/tests/badge.svg?branch=master "test status")](https://github.com/onrik/test/actions)
+![Tests](https://github.com/onrik/test/workflows/Tests/badge.svg)
